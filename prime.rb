@@ -10,7 +10,6 @@ def prime?(n)
     list.none? do |div|
       n % div == 0 && n != div
       return true
-    else false
     end
   end
 end
