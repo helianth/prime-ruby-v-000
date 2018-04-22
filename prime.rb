@@ -7,8 +7,9 @@ def prime?(n)
     return false
   end
   list = (2..n).to_a
-  list.detect do {|div| n % div == 0 && n != div}
-    return false
-  else return true
+  list.any? do { |div| n % div == 0 && n != div}
+    if true return false
+    else return true
+    end
   end
 end
