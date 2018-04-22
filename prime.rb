@@ -5,10 +5,10 @@ def prime?(n)
   end
   if n <= 1
     return false
-  end
-  list = (2..n).to_a
-  list.any? do { |div| n % div == 0 && n != div}
-    if true return false
+  elsif n >= 2
+    list = (2..n).to_a
+    list.any? { |div| n % div == 0 && n != div}
+        if true return false
     else return true
     end
   end
