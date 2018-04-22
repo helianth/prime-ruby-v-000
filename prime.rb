@@ -5,7 +5,7 @@ def prime?(n)
   end
   list = (2..n).to_a
   list.each do |i|
-    if n%i == 0
+    if n % i == 0
       return false
     else return true
     end
