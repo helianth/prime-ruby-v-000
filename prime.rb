@@ -9,7 +9,8 @@ def prime?(n)
     list = (2..n).to_a
     list.none? do |div|
       n % div == 0 && n != div
-      return true
     end
   end
 end
+
+
