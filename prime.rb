@@ -11,5 +11,6 @@ def prime?(n)
       n % div == 0 && n != div
       return true
     end
+  else false
   end
 end
