@@ -4,7 +4,7 @@ def prime?(n)
     return false
   end
   if n < 1
-    false
+    return false
   end
   list = (2..n).to_a
   list.each do |div|
