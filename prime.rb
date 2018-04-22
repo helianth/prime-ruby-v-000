@@ -7,10 +7,10 @@ def prime?(n)
     return false
   elsif n >= 2
     list = (2..n).to_a
-    list.none? { |div| n % div == 0 && n != div}
-    return true
-  else return false
+    list.none? do |div|
+      n % div == 0 && n != div
+      return true
+    else return false
+    end
   end
 end
-
-    
