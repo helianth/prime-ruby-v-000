@@ -3,9 +3,7 @@ def prime?(n)
   if n < 0
     n * -1
   end
-  2.upto(n) do |x|
-    if n % x == 0
-      return false
-    end
+  if n != 2 and n%2 == 0 
+    return false
   end
-end
+  
